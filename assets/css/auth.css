@@ -1,0 +1,171 @@
+.no-js-message {
+    position: relative;
+    top: 30vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 860px;
+}
+
+.form-base{
+    position: absolute;
+    width: 100%;
+
+    padding: 40px 60px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#sign_in_form{
+    top: 10vh;
+}
+
+#sign_up_form{
+    top: 4vh;
+}
+
+
+
+
+.form-img img{
+    max-width: 100%;
+}
+
+.input-wrapper{
+    position: relative;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 24px;
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: center;
+    
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.input-wrapper .error {
+    border: 1px solid var(--input-text-border-error-color) !important;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.input-icon {
+    padding-left: 20px;
+    align-self: center;
+    z-index: 1;
+
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.input-icon svg {
+    fill: var(--input-icon-color);
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.input-icon svg g{
+    fill: var(--input-icon-color);
+
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.input-icon svg path{
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+
+.input-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    font-size: var(--input-text-font-size-normal);
+    width: calc(100% - 88px);
+    color: var(--text-color);
+    background: var(--input-text-background-color);
+    display: block;
+    border-radius: 18px;
+    border: 1px solid var(--input-text-border-color);
+    padding: 14px 30px 14px 56px;
+    
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.input-text::placeholder{
+    font-size: var(--input-text-font-size-small);
+}
+
+.input-text:focus{
+    border: 1px solid var(--input-text-border-focus-color);
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+.input-text:focus ~ .input-icon svg path{
+    fill: var(--input-icon-focus-color);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.input-text:focus ~ .input-icon {
+    padding-left: 15px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+.form-additional-link{
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+}
+
+.form-additional{
+    margin-bottom: 24px;
+}
+
+.form-error-message{
+    margin-bottom: 12px;
+    z-index: 0;
+    opacity: 0;
+    color: var(--text-error-color);
+    font-size: var(--text-font-size-very-normal);
+    font-weight: normal;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.input-arrow{
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: normal;
+    font-size: var(--input-text-font-size-normal);
+    color: var(--text-link-color);
+    border: 0;
+    background: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.input-arrow:hover{
+    color: var(--text-focus-color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
